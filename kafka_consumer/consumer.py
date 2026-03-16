@@ -53,7 +53,7 @@ for message in consumer:
 
     if len(buffer) >= 100:  # Insert every 100 records
         insert_batch(buffer)
-        print(f"✅ Inserted {len(buffer)} records into Snowflake.")
+        print(f"Inserted {len(buffer)} records into Snowflake.")
         buffer.clear()
 
 # Close the Snowflake connection
